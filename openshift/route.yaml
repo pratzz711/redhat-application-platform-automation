@@ -3,7 +3,7 @@ kind: Route
 metadata:
   name: platform-automation
 spec:
-  # host: frontend.apps.example.com  # Optional: omit to use auto-generated cluster domain
+  # host: frontend.apps.example.com  # Optional: omit to use auto-generated cluster domaim
   to:
     kind: Service
     name: platform-automation-service
