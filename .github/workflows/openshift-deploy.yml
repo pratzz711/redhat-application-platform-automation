@@ -6,9 +6,8 @@ on:
       main
     paths:
       - 'openshift/**'
-    
-jobs:
-
+      
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
