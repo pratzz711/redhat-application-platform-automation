@@ -4,6 +4,16 @@ on:
   push:
     branches:
       main
+    paths:
+      - 'app.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'yarn.lock'
+      - 'Dockerfile'
+      - 'routes/**'
+      - 'bin/**'
+      - 'data/**'
+      
 
 jobs:
   build-and-push:
