@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platform-automation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: platform-automation
+  template:
+    metadata:
+      labels:
+        app: platform-automation
+    spec:
+      containers:
+      - name: platform-automation-container
+        image: pratiksha229/redhat-application-platform-automation:3
+        ports:
+        - containerPort: 8080

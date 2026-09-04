@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: platform-automation
+spec:
+  # host: frontend.apps.example.com  # Optional: omit to use auto-generated cluster domain
+  to:
+    kind: Service
+    name: platform-automation-service
+  port:
+    targetPort: 8080
